@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="06061b2b-a31a-4e11-983d-bb07bc835f9c" name="weixin1907" url="http://101.37.25.122">
+        <fileTransfer host="101.37.25.122" port="22" rootFolder="/wwwroot/weixin1907" accessType="SFTP" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
