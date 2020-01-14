@@ -25,6 +25,8 @@ Route::prefix('login')->group(function(){
 
 Route::prefix('admin')->group(function(){
     Route::any('wx','Admin\WxController@wx');  //微信
+    Route::any('test','Admin\WeiController@test');  //微信网页授权
+    Route::any('auth','Admin\WeiController@auth');  //微信网页授权回调
     Route::any('wei','Admin\WeiController@wei');//微信
     Route::any('freshToken','Admin\WeiController@freshToken');//获取最新access_token 并换缓存
     Route::any('createMenu','Admin\WeiController@createMenu');//创建菜单
@@ -62,5 +64,7 @@ Route::prefix('new')->group(function(){
     Route::get('list','News\NewsController@list');//新闻展示列表
     Route::get('delete/{id}','News\NewsController@delete');//新闻展示列表
 });
+
+
 
 
